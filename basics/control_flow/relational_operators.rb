@@ -1,15 +1,26 @@
-# Determines if a user can ride a roller coaster based on age and height.
+# Demonstrates the use of relational operators in Ruby
 
-print 'How old are you? '
-age = Integer(gets.chomp)
+# Example 1: Comparing two integers entered by the user
 
-print 'How tall are you? '
-height = Integer(gets.chomp)
+print "Enter value for a: "
+a = gets.chomp.to_i
 
-if height < 160
-  puts "Sorry, you're not tall enough to get in the roller coaster."
-elsif age >= 18
-  puts 'You can get in the roller coaster.'
-else
-  puts 'You can get in the roller coaster with an adult.'
-end
+print "Enter value for b: "
+b = gets.chomp.to_i
+
+puts "\nComparing #{a} and #{b}:"
+puts "a == b: #{a == b}"
+puts "a != b: #{a != b}"
+puts "a < b:  #{a < b}"
+puts "a > b:  #{a > b}"
+puts "a <= b: #{a <= b}"
+puts "a >= b: #{a >= b}"
+
+# Example 2: Comparing strings
+
+str1 = "apple"
+str2 = "banana"
+
+puts "\nComparing '#{str1}' and '#{str2}':"
+puts "str1 < str2: #{str1 < str2}"
+puts "str1 == 'apple': #{str1 == 'apple'}"
